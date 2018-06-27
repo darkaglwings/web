@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd"
+	xmlns="http://www.springframework.org/schema/beans">
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" id="propertyConfigurer">
+		<property name="location">
+			<value>classpath:org/frame/repository/config/config.properties</value>
+		</property>
+	</bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" destroy-method="finalize" >
+        <property name="driverClassName" value="${datasource.classname}" />
+        <property name="url" value="${datasource.url}" />
+        <property name="username" value="${datasource.username}" />
+        <property name="password" value="${datasource.password}" />
+    </bean>
+
+    <bean id="defaultLobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />
+    
+    <!-- if proxy-target-class is true then cglib.jar must be existent -->
+    <tx:annotation-driven proxy-target-class="true" transaction-manager="JDBCTransactionManager" />
+    
+    <bean id="JDBCTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate" scope="singleton" >
+        <constructor-arg ref="dataSource" />
+    </bean>
+
+    <bean id="simpleJdbcTemplate" class="org.springframework.jdbc.core.simple.SimpleJdbcTemplate" scope="singleton" >
+        <constructor-arg ref="dataSource" />
+    </bean>
+
+    <bean id="namedParameterJdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate" scope="singleton" >
+        <constructor-arg ref="dataSource" />
+    </bean>
+
+    <bean id="simpleJdbcCall" class="org.springframework.jdbc.core.simple.SimpleJdbcCall" scope="singleton" >
+        <constructor-arg ref="dataSource" />
+    </bean>
+
+</beans>

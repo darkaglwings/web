@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0061)http://kitchen.net-perspective.com/open-source/scroll-follow/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+
+	<meta name="npcheck" content="">
+		<link rel="Shortcut Icon"
+			href="http://kitchen.net-perspective.com/images/favicon.ico">
+			<link rel="alternate" type="application/rss+xml"
+				title="The Kitchen News"
+				href="http://kitchen.net-perspective.com/rss/">
+
+				<title>Open Source - Scroll Follow - The Kitchen @ Net
+					Perspective</title> <!-- Vanishing Point Styles -->
+				<link href="./index_files/style.v1-0-9.comb.css" rel="stylesheet"
+					type="text/css">
+					<!-- End Vanishing Point Styles -->
+</head>
+
+<body>
+
+	<div id="top-bar">
+
+		<div id="header">
+
+			<h1>
+				<a href="http://kitchen.net-perspective.com/"
+					title="The Kitchen @ Net Perspective">The Kitchen @ Net
+					Perspective</a>
+			</h1>
+
+			<ul id="status">
+
+				<li class="first">You are not currently logged in.</li>
+				<li><a href="http://kitchen.net-perspective.com/login/">Log
+						In</a></li>
+			</ul>
+		</div>
+		<!--end #header-->
+	</div>
+	<!--end #top-bar-->
+
+	<div id="container">
+
+		<ul id="nav">
+			<li style="position: relative; zoom: 1;"><a
+				href="http://kitchen.net-perspective.com/commercial/image-plane/">Commercial</a>
+			<div style="display: inherit">
+					<canvas width="5px" height="5px"
+						style="position:absolute;top:-0px;left:-0px;"></canvas>
+					<canvas width="5px" height="5px"
+						style="position:absolute;top:-0px;right:-0px;"></canvas>
+				</div></li>
+			<li class="current" style="position: relative; zoom: 1;"><a
+				href="http://kitchen.net-perspective.com/open-source/">Open
+					Source</a>
+			<div style="display: inherit">
+					<canvas width="5px" height="5px"
+						style="position:absolute;top:-0px;left:-0px;"></canvas>
+					<canvas width="5px" height="5px"
+						style="position:absolute;top:-0px;right:-0px;"></canvas>
+				</div></li>
+			<li style="position: relative; zoom: 1;"><a
+				href="http://kitchen.net-perspective.com/support/">Support</a>
+			<div style="display: inherit">
+					<canvas width="5px" height="5px"
+						style="position:absolute;top:-0px;left:-0px;"></canvas>
+					<canvas width="5px" height="5px"
+						style="position:absolute;top:-0px;right:-0px;"></canvas>
+				</div></li>
+		</ul>
+
+		<div id="content-wrap">
+
+			<div id="content" style="position: relative; zoom: 1;">
+
+				<div id="sidebar">
+
+					<ul class="project-info" style="position: relative; zoom: 1;">
+						<li class="first">Open Source jQuery Plugin</li>
+						<li>Current Version: 0.4.0</li>
+						<li>License: <a
+							href="http://www.opensource.org/licenses/mit-license.php">MIT</a></li>
+						<li><a href="http://code.google.com/p/jquery-scroll-follow/">Google
+								Code Home</a></li>
+						<li><a class="download"
+							href="http://kitchen.net-perspective.com/files/jquery-scroll-follow.zip">Download
+								Latest Version</a></li>
+						<div style="display: inherit">
+							<canvas width="5px" height="5px"
+								style="position:absolute;top:-3px;left:-3px;"></canvas>
+							<canvas width="5px" height="5px"
+								style="position:absolute;top:-3px;right:-3px;"></canvas>
+							<canvas width="5px" height="5px"
+								style="position:absolute;bottom:-3px;left:-3px;"></canvas>
+							<canvas width="5px" height="5px"
+								style="position:absolute;bottom:-3px;right:-3px;"></canvas>
+						</div>
+					</ul>
+
+					<h3>A Deal With Perspective</h3>
+
+					<p>
+						<a href="http://www.net-perspective.com/">Net Perspective</a>
+						provides our open source projects free for use without restriction
+						under the <a
+							href="http://www.opensource.org/licenses/mit-license.php">MIT
+							license</a>. We also provide these project AS IS without warranty or
+						guarantee of continued support.
+					</p>
+
+					<p>
+						We welcome any feedback or contributions you have to offer. You
+						can <a href="http://kitchen.net-perspective.com/contact/">contact
+							us</a> directly or head on over to <a
+							href="http://getsatisfaction.com/netperspective">the forums</a>.
+					</p>
+
+					<h3>What Is It Worth To You?</h3>
+
+					<p>If you are interested in furthering the development of any
+						particular item we will accept voluntary payments with an earmark
+						towards your favorite project.</p>
+
+					<form
+						action="http://kitchen.net-perspective.com/open-source/contribute/"
+						method="post">
+						<fieldset>
+							<label> <span>Amount (USD):</span> <input type="text"
+								class="text" name="amt"></label> <label> <select
+								class="select" name="project">
+									<option value="0">None Specific</option>
+									<option value="1">jQuery Scroll Follow</option>
+									<option value="2">jQuery Purr</option>
+									<option value="3">Vanishing Point</option>
+							</select>
+							</label> <input class="button" type="submit" value="Continue">
+						</fieldset>
+					</form>
+				</div>
+				<!--end #sidebar-->
+
+				<div class="main">
+
+					<h2>jQuery Scroll Follow</h2>
+
+					<h3>Overview</h3>
+
+					<p>Scroll Follow is a simple jQuery plugin that enables a DOM
+						object to follow the page as the user scrolls. Scroll Follow has
+						been successfully tested on IE6, IE7, FF2, FF3, Safari 3, and
+						Opera 9 on Windows. It has been successfully tested on FF3 and
+						Safari 3 on MacOSX.</p>
+
+					<h3>Requirements</h3>
+
+					<ul>
+						<li><a href="http://www.jquery.com/">jQuery</a> (tested with
+							1.2.6)</li>
+						<li><a href="http://ui.jquery.com/">jQuery UI Core</a>
+							(tested with 1.5.2)</li>
+					</ul>
+
+					<h3>Optional</h3>
+
+					<ul>
+						<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/">jQuery
+								Easing Plugin</a></li>
+						<li><a
+							href="http://www.stilbuero.de/2006/09/17/cookie-plugin-for-jquery/">jQuery
+								Cookie Plugin</a></li>
+					</ul>
+
+					<h3>Installation</h3>
+
+					<ol>
+						<li>Include jQuery:
+
+							<div class="code">
+
+								<ol>
+									<li>&lt;script type="text/javascript"
+										src="jquery.js"&gt;&lt;/script&gt;</li>
+								</ol>
+							</div>
+							<!--end .code-->
+						</li>
+						<li>Include required plugins, including Scroll Follow:
+
+							<div class="code">
+
+								<ol>
+									<li value="2">&lt;script&nbsp;type="text/javascript"&nbsp;src="ui.core.js"&gt;&lt;/script&gt;</li>
+									<li>&lt;script&nbsp;type="text/javascript"&nbsp;src="jquery.scrollFollow.js"&gt;&lt;/script&gt;</li>
+								</ol>
+							</div>
+							<!--end .code-->
+						</li>
+						<li>Call Scroll Follow on the desired DOM object: <br><a
+								href="http://kitchen.net-perspective.com/sf-example-1.html">View
+									Example</a>
+
+								<div class="code">
+
+									<ol>
+										<li value="4">&lt;script&nbsp;type="text/javascript"&gt;</li>
+										<li>&nbsp;&nbsp;$(&nbsp;'#example'&nbsp;).scrollFollow();</li>
+										<li>&lt;/script&gt;</li>
+									</ol>
+								</div>
+								<!--end .code--></li>
+						<li>Or call Scroll Follow on the desired DOM object and give
+							it some parameters: <br><a
+								href="http://kitchen.net-perspective.com/sf-example-2.html">View
+									Example</a>
+
+								<div class="code">
+
+
+									<ol>
+										<li value="7">&lt;script type="text/javascript"&gt;</li>
+										<li>&nbsp;$(&nbsp;document&nbsp;).ready(&nbsp;function&nbsp;()&nbsp;{</li>
+										<li>&nbsp;&nbsp;&nbsp;$( '#example'
+											).scrollFollow(&nbsp;{</li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;speed: 1000,</li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;offset: 60,</li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;killSwitch: 'exampleLink',</li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;onText: 'Disable Follow',</li>
+										<li>&nbsp;&nbsp;&nbsp;&nbsp;offText: 'Enable Follow'</li>
+										<li>&nbsp;&nbsp;&nbsp;}&nbsp;);</li>
+										<li>&nbsp;}&nbsp;);</li>
+										<li>&lt;/script&gt;</li>
+									</ol>
+
+								</div>
+								<!--end .code-->
+						</li>
+						<li>The Scroll Follow object will remain inside its immediate
+							container. <br><a
+								href="http://kitchen.net-perspective.com/sf-example-3.html">View
+									Example</a>
+						</li>
+						<li>Or you can specify a parent (by ID) for the Scroll Follow
+							object to consider its container: <br><a
+								href="http://kitchen.net-perspective.com/sf-example-4.html">View
+									Example</a>
+
+								<div class="code">
+
+
+									<ol>
+										<li value="7">&lt;script&nbsp;type="text/javascript"&gt;</li>
+										<li>&nbsp;$(&nbsp;document&nbsp;).ready(&nbsp;function&nbsp;()&nbsp;{</li>
+										<li>&nbsp;&nbsp;$(&nbsp;'#example'&nbsp;).scrollFollow(&nbsp;{</li>
+										<li>&nbsp;&nbsp;&nbsp;container:&nbsp;'outer'</li>
+										<li>&nbsp;&nbsp;}&nbsp;);</li>
+										<li>&nbsp;}&nbsp;);</li>
+										<li>&lt;/script&gt;</li>
+									</ol>
+
+								</div>
+								<!--end .code-->
+						</li>
+						<li>Scroll Follow uses the "top" property of an object to
+							slide it. Therefore, the "position" of the object must be set to
+							either "relative" or "absolute." Other than that limitation, the
+							Scroll Follow object should be completely configured through CSS.
+						</li>
+					</ol>
+
+					<h3>Parameters</h3>
+
+					<dl class="params">
+						<dt>� speed</dt>
+						<dd>
+							<em>int - default: 500</em> <br>The duration of the sliding
+								animation (in milliseconds). The smaller the value, the faster
+								the animation. 
+						</dd>
+
+						<dt>� easing</dt>
+						<dd>
+							<em>string - default: 'linear'</em> <br>If included, use any
+								one of the easing options from the <a
+								href="http://gsgd.co.uk/sandbox/jquery/easing/">easing
+									plugin</a>. Uses 'linear' by default which provides no easing. 
+						</dd>
+
+						<dt>� offset</dt>
+						<dd>
+							<em>int - default: 0</em> <br>Number of pixels the Scroll
+								Follow object should remain from top of viewport. 
+						</dd>
+
+						<dt>� container</dt>
+						<dd>
+							<em>string - default: object's immediate parent</em> <br>ID
+								of the containing div. 
+						</dd>
+
+						<dt>� killSwitch</dt>
+						<dd>
+							<em>string - default: 'killSwitch'</em> <br>ID of the On/Off
+								toggle element. Requires the <a
+								href="http://www.stilbuero.de/2006/09/17/cookie-plugin-for-jquery/">jQuery
+									Cookie plugin</a>. 
+						</dd>
+
+						<dt>� onText</dt>
+						<dd>
+							<em>string - default: 'Turn Slide Off'</em> <br>killSwitch
+								text to be displayed if sliding is enabled. 
+						</dd>
+
+						<dt>� offText</dt>
+						<dd>
+							<em>string - default: 'Turn Slide On'</em> <br>killSwitch
+								text to be displayed if sliding is disabled. 
+						</dd>
+
+						<dt>� relativeTo</dt>
+						<dd>
+							<em>string - default: 'top'</em> <br>Scroll animation can be
+								relative to either the 'top' or 'bottom' of the viewport. 
+						</dd>
+
+						<dt>� delay</dt>
+						<dd>
+							<em>int - default: 0</em> <br>Time between the end of the
+								scroll and the beginning of the animation in milliseconds. 
+						</dd>
+					</dl>
+
+					<h3>History</h3>
+
+					<dl class="params">
+						<dt>� October 29, 2008 - Version 0.4.0</dt>
+						<dd>
+							Added 'delay' parameter which sets the scroll follow to only
+							happen a set interval after the last scroll <br> Added a
+								window.resize listener <br>Removed the requirement for the
+									easing plugin (still necessary for advanced easing settings) <br>Removed
+										the requirement for the cookie plugin (still necessary for
+										using a killswitch) <br>Removed 'animate' parameter.
+											Effect can be fully realized with CSS <br>Fixed typo in
+												version of ui.core.js tested 
+						</dd>
+
+						<dt>� October 22, 2008 - Version 0.3.1</dt>
+						<dd>Fixed behavior when 'relativeTo' is set to 'bottom.'
+							Previous behavior allowed the scrolling object to break out of
+							the top of its container.</dd>
+
+						<dt>� October 7, 2008 - Version 0.3.0</dt>
+						<dd>
+							Reworked animating logic to take more situations into account. <br>Added
+								animating to initial position on page load. <br>Added
+									animating to initial position on reenabling of following. <br>
+										Added 'relativeTo' parameter: allows the scroll following
+										object to reposition based on the top or the bottom of the
+										viewport. 
+						</dd>
+
+						<dt>� July 2, 2008 - Version 0.2.1</dt>
+						<dd>Minor bug fix.</dd>
+
+						<dt>� July 2, 2008 - Version 0.2.0</dt>
+						<dd>Added 'animate' parameter. Allows a scroll following
+							effect with no animation.</dd>
+
+						<dt>� May 23, 2008 - Version 0.1.0</dt>
+						<dd>Initial Release</dd>
+					</dl>
+				</div>
+				<!--end .main-->
+				<div style="display: inherit">
+					<canvas width="5px" height="5px"
+						style="position:absolute;top:-0px;left:-0px;"></canvas>
+					<canvas width="5px" height="5px"
+						style="position:absolute;top:-0px;right:-0px;"></canvas>
+				</div>
+			</div>
+			<!--end #content-->
+
+			<div id="content-bottom" style="position: relative; zoom: 1;">
+				<div style="display: inherit">
+					<canvas width="5px" height="5px"
+						style="position:absolute;bottom:-0px;left:-0px;"></canvas>
+					<canvas width="5px" height="5px"
+						style="position:absolute;bottom:-0px;right:-0px;"></canvas>
+				</div>
+			</div>
+			<!--end #content-bottom-->
+		</div>
+		<!--end #content-wrap-->
+
+
+
+		<div class="clear"></div>
+
+		<h3>Site Info</h3>
+
+		<div class="news-container" style="position: relative; zoom: 1;">
+
+			<div class="news">
+
+				<div class="item foot">
+
+					<h4>Contact Us</h4>
+
+					<dl>
+						<dt>By Phone:</dt>
+						<dd>979-696-SITE (7483)</dd>
+
+						<dt>By Email:</dt>
+						<dd>
+							<a href="http://kitchen.net-perspective.com/contact/">Send
+								Email</a>
+						</dd>
+
+						<dt>For Support:</dt>
+						<dd>
+							Please visit <a href="http://getsatisfaction.com/netperspective">our
+								Get Satisfaction forum</a>.
+						</dd>
+					</dl>
+				</div>
+				<!--end .item-->
+
+				<div class="item foot">
+
+					<h4>About Us</h4>
+
+					<p>The Kitchen is run by the fine folk at Net Perspective, LLC.
+					</p>
+
+					<p>
+						Find out <a href="http://kitchen.net-perspective.com/about/">more
+							about The Kitchen</a> or visit us at <a
+							href="http://www.net-perspective.com/">Net-Perspective.com</a>.
+					</p>
+				</div>
+				<!--end .item-->
+
+				<div class="item foot">
+
+					<h4>Site Map</h4>
+
+					<ul>
+						<li><a href="http://kitchen.net-perspective.com/">Home</a></li>
+						<li><a href="http://kitchen.net-perspective.com/commercial/">Commercial
+								Products</a></li>
+						<li><a href="http://kitchen.net-perspective.com/open-source/">Open
+								Source Projects</a></li>
+						<li><a href="http://kitchen.net-perspective.com/support/">Support</a></li>
+						<li><a href="http://kitchen.net-perspective.com/contact/">Contact</a></li>
+						<li><a href="http://kitchen.net-perspective.com/about/">About</a></li>
+						<li><a href="http://kitchen.net-perspective.com/privacy/">Privacy
+								Policy</a></li>
+						<li><a href="http://kitchen.net-perspective.com/tos/">Terms
+								of Service</a></li>
+						<li><a href="http://kitchen.net-perspective.com/rss/">News
+								RSS</a></li>
+					</ul>
+				</div>
+				<!--end .item-->
+
+				<div class="item foot">
+
+					<h4>Copyright</h4>
+
+					<p>This site, its contents, and its design are � Copyright 2008
+						- 2013 Net Perspective, LLC. All rights reserved.</p>
+
+					<p>
+						Some images used here by permission are copyright of their
+						respective owners. Thanks to Mark James for the fantastic <a
+							href="http://www.famfamfam.com/lab/icons/silk/">Silk icon set</a>.
+					</p>
+				</div>
+				<!--end .item-->
+			</div>
+			<!--end .news-->
+			<div style="display: inherit">
+				<canvas width="25px" height="25px"
+					style="position:absolute;top:-3px;left:-3px;"></canvas>
+				<canvas width="25px" height="25px"
+					style="position:absolute;bottom:-3px;right:-3px;"></canvas>
+			</div>
+			<div style="display: inherit">
+				<canvas width="5px" height="5px"
+					style="position:absolute;top:-3px;right:-3px;"></canvas>
+				<canvas width="5px" height="5px"
+					style="position:absolute;bottom:-3px;left:-3px;"></canvas>
+			</div>
+		</div>
+		<!--end .news-container-->
+
+
+		<div class="clear"></div>
+	</div>
+	<!--end #container-->
+
+	<!-- Vanishing Point Javascript -->
+	<script type="text/javascript"
+		src="./index_files/core1-2-6_init1-1-1_cornerz0-6-3_setCornerz0-1-3_downloadTracker0-1-0.comb.js"></script>
+
+	<!-- End Vanishing Point Javascript -->
+
+	<script type="text/javascript"> 
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script src="./index_files/ga.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-3353752-6");
+		pageTracker._trackPageview();
+	</script>
+
+</body>
+</html>
